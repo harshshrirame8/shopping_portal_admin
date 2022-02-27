@@ -1,0 +1,201 @@
+.main{
+    position: fixed;
+    top:0;
+    left: 0;
+    height: 100%;
+    width : 100%;
+    background-color: rgb(230, 236, 241);
+}
+
+.all{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    background-color:  rgb(230, 236, 241);
+    height:523px;
+    box-shadow: 0px 0px 5px;
+    border-radius: 7px; 
+    width:100;
+    overflow-y: scroll;
+    padding: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+
+.item-image{
+    height:300px;
+    width: 300px;
+    position: absolute;
+    top:200px;
+    left:100px;
+}
+
+.font{
+    margin-bottom: 28px;
+    margin-top: 40px;
+}
+.item-name{
+    position: absolute;
+    overflow-y: hidden;
+    font-size: 30px;
+    top:200px;
+    left :430px;
+    width: 500px;
+}
+
+.item-desc{
+    width: 500px;
+    font-size: 16.5px;
+    top:270px;
+    left :430px;
+    position: absolute;
+    overflow-y: hidden;
+    margin-bottom: 10px;
+}
+.line{
+    width: 97%;
+    margin-right: 20px;
+    margin-top: -30px !important;
+}
+
+.title{
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+.item-price{
+    font-size: 16.5px;
+    top:370px;
+    left :430px;
+    position: absolute;
+    overflow-y: hidden;
+    font-weight: bolder;   
+}
+
+.mc p{
+    margin-left : 50px;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+  }
+  
+  .mc input{
+    margin-left : 50px;
+    height: 30px;
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 7px;
+    padding-left:15px;
+    border: none;
+  }
+  
+  .butto{
+    margin-top: 20px;
+    margin-left : 50px;
+    background-color: rgb(60, 161, 255);
+    height: 30px;
+    width: 315px;
+    border: none;
+    color: aliceblue;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer
+  }
+  .mc button:hover{
+    transform: scale(1.05);
+    transition: 0.5s;;
+  }
+  
+  .b{
+    position: absolute;
+    top:126px;
+    left:330px;
+    color: rgb(110, 110, 110);
+      font-size: 14px;
+  }
+  .r{
+    position: absolute;
+    top:197px;
+    left:330px;
+    color: rgb(110, 110, 110);
+    font-size: 14px;
+  }
+  .l{
+    position: absolute;
+    top:270px;
+    left:330px;
+    color: rgb(110, 110, 110);
+    font-size: 14px;
+  }
+  
+  .md {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto; 
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.4); 
+    }
+    
+    .mc {
+      align-content: center;
+      position: relative;
+      background-color: #fefefe;
+      margin: auto;
+      border-radius: 10px;
+      height:60%;
+      padding: 0;
+      border: 1px solid #888;
+      background-color: rgb(230, 236, 241);
+      width: 30%;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+      -webkit-animation-name: animatetop;
+      -webkit-animation-duration: 0.4s;
+      animation-name: animatetop;
+      animation-duration: 0.4s
+    }
+    
+    @-webkit-keyframes animatetop {
+      from {top:-300px; opacity:0} 
+      to {top:0; opacity:1}
+    }
+    
+    @keyframes animatetop {
+      from {top:-300px; opacity:0}
+      to {top:0; opacity:1}
+    }
+
+    .update:hover{
+        height: 35px;
+        width: 110px;
+        transition: 0.3s;
+        margin-left: -5px;
+        margin-top: 3px;
+      }
+      
+      .dot{
+        color:rgb(230, 236, 241);
+      }
+      
+      .update{
+        position: absolute;
+        top:420px;
+        left:430px;
+        background-color: rgb(60, 161, 255);
+        height: 30px;
+        width: 100px;
+        border: none;
+        color: aliceblue;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+      }
