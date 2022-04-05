@@ -3,6 +3,7 @@ import './Display.css'
 import {AiFillBook,AiOutlineLink} from 'react-icons/ai'
 import {FaRupeeSign} from 'react-icons/fa'
 import Bar from './Bar'
+import  Axios from 'axios'
 
 var track;
 
@@ -24,27 +25,30 @@ function Display(props) {
         }
     }
 
-    const uppro = (a) =>{
+    const  uppro = async (a) =>{
+        var index = 0;
         const na = document.getElementById('na').value
         const pr = document.getElementById('pr').value 
         const li = document.getElementById('li').value
         
-        
-        for(let i=0; i<items.length; i++){
-            
-            if(items[i].id === a){
-                if(na !== ''){
-                    items[i].name = na;
-                }
-                if(pr !== ''){
-                    items[i].price = pr;
-                }
-                if(li !== ''){
-                    items[i].link = li;
-                }
-            }
+        for (var i = 0  ; i< props.items.length;  i++) {
+            if(props.items[i].id == a) index = i
         }
-        props.setitems(items)
+        
+        const x = await Axios.put('http://localhost:5000/update' , {
+            id:a, 
+            name : na , 
+            price : pr , 
+            link : li,
+        })
+        
+        const y = await Axios.get('http://localhost:5000/read').then ((response) =>{
+            props.setitems(response.data)
+            props.setit(response.data[index])
+        })
+
+        var md = document.getElementById("md");
+        md.style.display = "none"
     }
 
   return (
